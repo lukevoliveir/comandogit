@@ -1,0 +1,67 @@
+git config --global user.name "nome da pessoa"
+
+git config --global user.email "o email da pessoa"
+
+git config --global core.editor (coloca o nome do editor)
+
+mkdir git-course //para criar pasta
+
+git init 
+
+git status
+
+git add .
+
+git commit -m "escrever o que foi feito"
+
+git log 
+
+git shortlog 
+
+git shortlog -sn
+
+git diff
+
+git diff --name-only
+
+git checkout  teste.php (e colocar o arquivo que mudou)
+
+git reset HEAD teste.php
+
+git reset --soft (mais a hash)
+
+git reset --mixed (mais a hash)
+
+git reset --hard (mais a hash)
+
+git remote add origin https://github.com/lukevoliveir/bambumdeoculos.git
+
+git remote
+
+git remote -v
+
+git push -u origin master
+
+git show
+
+git checkout -b (mas o nome do aqruivo exemplo: testing)
+
+git branch
+
+git checkout (mas para a branch que voce quer ir exemplo: master)  
+
+git branch -D mas a branch que vc quer deletar
+
+git merger mas a branch que voce criou (isso server para unir arquivos da branch que voce criou
+
+git rebase mas a branch que voce criou
+
+git stash
+
+git stash apply
+
+git stash list
+
+git stash clear
+
+

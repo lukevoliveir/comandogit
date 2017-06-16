@@ -1,0 +1,74 @@
+
+git init = monitora a pasta principal
+git config user.name = configurar usuario
+git config user.email = configurar email
+git status = mostra o estado dos arquivos
+git -m "' = comit enviando mensagem
+git pull = atualiza projeto remoto
+git comit -am = adiciona todos os arquivos modificados mais mensagens para ser comitado
+git add = adicionar arquivo
+git log = mostra os comits e os usuarios que fizeram comits
+git log --author="giva" == filtra todos os usuarios que tenha as letras 'giva';
+git shortlog = mostra em detalhes o que cada um fez no projeto
+git shortlog -sn = mostra a quantidade de comit e o usuario
+git log --graph = mostra em forma grafica o que acontece com os brankts
+git log e copia a hash, depois git show  e cola a hash novamente e mostra emconfig detalhes o que foi feito no comit
+
+
+desfazendo coisas!!!
+git log
+git checkout  e o nome do arquivo a tirar a modificação = retorna o arquivo ao seu estado anterior
+git reset HEAD = retorna o arquivo do stage para fazer modificações antes do comit
+git reset --soft =  reseta o comit e deixama os arquivos preparado e adicionados para ser comitado
+git reset --mixed =reseta o comit e deixa os arquivos e deixa em estado antes do stage
+git reset --hard = ignora o comit, e volta tudo antes do comit
+git reset --soft --mixed -- hard e a hash = para executar o reset para o comit anterior
+
+clonando git remote
+
+copiar o endereço e colar no gitbash
+
+criar um branch
+git chechout -b e o nome do branch
+
+verificar os branchs
+git branch = mostra os branchs e com o * mostra em qual voce está
+
+movendo e deletando branches
+git branch = lista os branch
+git chechout e o nome do branch = vai para o branch que voce quer
+
+deletar branch
+git branch -D e o nome do branch = deleta o branch
+
+Unir branch Merge e Rebase
+
+Extras!!!
+gits stash = guarda os arquivos em pasta para quando necessario reutilizar
+git stash apply = aplica as alterações do git stash
+git stash list = lista as pastas do stash
+git stash clear = limpa todas as pastas do stash
+
+criar alias = atalhos
+git config --global alias.s status = cria o atalho digitando s = status
+
+Versionando com Tags 
+git tag -a 1.0.0 -m "Tela finalizada" = cria tags para melhor organização
+
+subir as tags para remote
+git push origin master --tags = sobe as tags para o remoto
+
+listar as tags
+git tag = lista as tags no gitbash
+
+GIT REVERT
+git revert e a hash que deu problema = reverte as mudanças para o codigo anterior
+
+Apagando tags e branches remotos
+apaga somente local
+git tag = lista as tags
+git tag -d e a versão da tag = apaga a tag selecionada local
+
+apagar as tags remotas
+git push origin : e a versão da tag selecionada = apaga tags remotas
+o memso comando para apagar os branch
